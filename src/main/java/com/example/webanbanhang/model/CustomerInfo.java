@@ -5,6 +5,7 @@ public class CustomerInfo {
 	String address;
 	String email;
 	String phone;
+	boolean valid;
 
 	public String getName() {
 		return name;
@@ -38,6 +39,10 @@ public class CustomerInfo {
 		this.phone = phone;
 	}
 
+	public void setValid(boolean valid) {
+		this.valid = valid;
+	}
+
 	public CustomerInfo(String name, String address, String email, String phone) {
 		super();
 		this.name = name;
@@ -46,8 +51,17 @@ public class CustomerInfo {
 		this.phone = phone;
 	}
 
-	public CustomerInfo() {
-		super();
+	public CustomerInfo(CustomerForm customerForm) {
+		this.name = customerForm.getName();
+		this.address = customerForm.getAddress();
+		this.email = customerForm.getEmail();
+		this.phone = customerForm.getPhone();
+		this.valid = customerForm.isValid();
+	}
+
+	public boolean isValid() {
+		// TODO Auto-generated method stub
+		return valid;
 	}
 
 }

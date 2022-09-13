@@ -99,6 +99,20 @@ public class OrderInfo {
 		this.customerPhone = customerPhone;
 		this.details = details;
 	}
+	
+
+	public OrderInfo(String id, Date orderDate, int odernum, double amount, String customerName, String customerAddress,
+			String customerEmail, String customerPhone) {
+		super();
+		this.id = id;
+		this.orderDate = orderDate;
+		this.odernum = odernum;
+		this.amount = amount;
+		this.customerName = customerName;
+		this.customerAddress = customerAddress;
+		this.customerEmail = customerEmail;
+		this.customerPhone = customerPhone;
+	}
 
 	public OrderInfo() {
 		super();

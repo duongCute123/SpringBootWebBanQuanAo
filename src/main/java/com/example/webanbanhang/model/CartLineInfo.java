@@ -26,6 +26,10 @@ public class CartLineInfo {
 		this.quanlity = quanlity;
 	}
 
+	public CartLineInfo() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public double getAmount() {
 		return this.productInfo.getPrice() * this.quanlity;
 	}
